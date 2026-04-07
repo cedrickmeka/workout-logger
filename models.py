@@ -155,3 +155,6 @@ class Exercise:
     def delete(self):
         with get_connection() as conn:
             conn.execute("DELETE FROM exercises WHERE id = ?", (self.id,))
+
+
+initialize_db()
